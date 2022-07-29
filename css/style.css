@@ -445,12 +445,26 @@ img {
   color: var(--text-light-gray);
 }
 /* # contact */
+.contact-grid {
+  max-width: 1000px;
+  margin: auto;
+}
 .contact-info {
-  grid-column: 5;
+  grid-column: span 5;
 }
 .contact-form {
-  grid-column: 7;
+  grid-column: span 7;
 }
+.contact-info-item {
+  position: relative;
+}
+.contact-info-item i {
+  height: 50px;
+  width: 50px;  
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow);
+}
+
 /* # footer */
 /* # responsive */
 
