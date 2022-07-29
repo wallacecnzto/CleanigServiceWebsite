@@ -445,6 +445,12 @@ img {
   color: var(--text-light-gray);
 }
 /* # contact */
+.contact-info {
+  grid-column: 5;
+}
+.contact-form {
+  grid-column: 7;
+}
 /* # footer */
 /* # responsive */
 
