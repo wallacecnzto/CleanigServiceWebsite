@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link type="text/css" href="css/fontawesome.min.css" rel="stylesheet">
+  <link type="text/css" href="css/style-switcher.css" rel="stylesheet">
   <link type="text/css" href="css/style.css" rel="stylesheet">
 </head>
 
@@ -307,6 +308,30 @@
     <!-- footer end -->
   </div>
   <!-- page wrapper end -->
+  <!-- style switcher start -->
+  <div class="style-switcher js-style-switcher">
+    <button type="button" class="style-switcher-toggler js-style-switcher-toggler">
+      <i class="fas fa-cog"></i>
+    </button>
+    <div class="style-switcher-main">
+      <h2>style switcher</h2>
+      <div class="style-switcher-item">
+        <p>Theme color</p>
+        <div class="theme-color">
+          <input type="range" min="0" max="360" class="hue-slider js-hue-slider">
+          <div class="hue">Hue: <span class="js-hue"></span></div>
+        </div>
+      </div>
+      <div class="style-switcher-item">
+        <label class="form-switch">
+          <span>Dark Mode</span>
+          <input type="checkbox" class="js-dark-mode">
+          <div class="box"></div>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- style switcher end -->
   <script src="js/main.js"></script>
 </body>
 
