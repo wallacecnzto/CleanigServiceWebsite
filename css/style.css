@@ -34,6 +34,22 @@
   --fs-md: 16px;
   --fs-sm: 14px;
 }
+/* override variable for dark theme */
+body.t-dark {
+  /* text-colors */
+  --text-x-dark-gray: hsl(0, 0%, 94%);
+  --text-dark-gray: hsl(0, 0%, 84%);
+
+  /* background colors */
+  --body-bg-color: hsl(var(--hue), 20%, 10%);
+  --bg-color: hsl(var(--hue), 13%, 17%);
+
+  /* border color */
+  --border-color: hsl(var(--hue), 15%, 30%);
+
+  /* shadow */
+  --shadow: 0 0 10px hsla(var(--hue), 19%, 7%, 0.9);
+}
 /* # base */
 html {
   scroll-behavior: smooth;
