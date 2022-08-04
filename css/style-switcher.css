@@ -87,10 +87,46 @@ hsl(360, var(--saturation), var(--lightness))
 .hue-slider::-moz-range-thumb:hover {
   opacity: 0.8;
 }
+.form-switch {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.form-switch span {
+  padding-right: 15px;
+}
+.form-switch input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
 .form-switch .box {
   height: 24px;
   width: 44px;
   border-radius: 12px;
   border: 1px solid var(--border-color);
+  position: relative;
+  transition: all 0.5s ease;
 }
-
+.form-switch .box::before {
+  content: '';
+  height: 14px;
+  width: 14px;
+  border: 1px solid var(--border-color);
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.form-switch input:checked + .box {
+  background-color: var(--main-color);
+}
+.form-switch input:focus + .box {
+  box-shadow: var(--focus-shadow);
+}
+.form-switch input:checked + .box::before {
+  transform: translateX(calc(100% + 6px));
+  background-color: var(--bg-white);
+  border-color: transparent;
+}
